@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.individualUser,form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0px 40px;
+    border: 1px solid #f90000d9;
+    padding:10px;
+    box-sizing: border-box;
+}
+.userInfo{
+    font-size: 25px;
+    border: 1px solid red;
+    padding: 11px;
+}
+.userInfo span{
+    font-size: 20px;
+}
+.editForm input{
+    padding: 10px;
+}
+.goLink{
+    display: inline-block;
+    font-size: 25px;
+    background-color: #1d736f;
+    color: white;
+    padding: 14px !important;
+    text-decoration: none;
+    margin: 0 10px;
+    border: unset;
+}
+.delete{
+    font-size: 20px;
+    background-color: red;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+form input{
+    padding: 10px;
+}
+.editInfo{
+    display: flex;
+    flex-direction: column;
+}
+.userInfoList{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.usersButton{
+    display: flex;
+    margin-top: 25px;
+}
+.userEditInfo,.userAddInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.users{
+    margin: 0 30px;
+}
