@@ -16,6 +16,8 @@
   box-sizing: border-box;
 }
 .userInfo {
+  display: flex;
+  flex-direction: column;
   font-size: 25px;
   border: 1px solid #a9a9a9;
   padding: 11px;
@@ -127,6 +129,11 @@ input{
   span{
     font-family: $medium;
     margin: 15px 0;
+  }
+}
+.userInfo{
+  span{
+    word-break: break-word;
   }
 }
 input[type=number]::-webkit-inner-spin-button,

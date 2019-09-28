@@ -2,9 +2,7 @@ const initialState = {
     users:[
         {
             name:"Vardges",
-            surname:"Hamazaspyan",
-            email:"hamazaspyan.vardges@mail.ru",
-            phone:"077853382",
+            lastName:"Hamazaspyan",
             city:"Ejmiadzin",
             country:"Armenia",
             address:"Prospekt",
@@ -15,9 +13,7 @@ const initialState = {
         },
         {
             name:"Hovo",
-            surname:"Mkrtchyan",
-            email:"hovo.mkrtchyan@mail.ru",
-            phone:"077878787",
+            lastName:"Mkrtchyan",
             city:"Erevan",
             country:"Armenia",
             address:"Komunarner",
@@ -28,9 +24,7 @@ const initialState = {
         },
         {
             name:"Norayr",
-            surname:"Melkumyan",
-            email:"norayr.melkumyan@mail.ru",
-            phone:"077656565",
+            lastName:"Melkumyan",
             city:"Erevan",
             country:"Armenia",
             address:"Prospekt",
@@ -65,9 +59,14 @@ export default (state = initialState,action) => {
             let id = state.users.length;
             let newUser = state.newUser;
             newUser.id = id;
+            state.newUser = {
+            ...state.newUser,
+                    packageKind: action.packagekind,
+                    legal:action.legal
+            };
             return {
                 ...state,
-                users:[...state.users,newUser]
+                users : [...state.users,state.newUser]
             }
         }
         case "SHOW_USER" : {

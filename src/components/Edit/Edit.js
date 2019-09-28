@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { connect } from 'react-redux';
+import { Form, Row, Col, Input, Button, Icon,InputNumber  } from 'antd';
 import { NavLink } from "react-router-dom";
 import { EditChange,MakeChange } from "../../Stores/Edit/action";
 
@@ -9,56 +10,44 @@ class Edit extends Component {
         const { UsersData:{ editableUser } } = this.props;
         let content = <div className="registrationError"><span>Select the User for Edition</span> <NavLink className="goLink" to="/">Users</NavLink></div>;
        if (editableUser !== undefined){
-           content = <form  action="">
-                   <div className="userEditInfoSection">
-                       <div className="editInfo">
+           content = <Form  action="">
+                   <Row className="userEditInfoSection">
+                       <Col className="editInfo">
                              <span>
                                  Name
                              </span>
-                           <input type="text" name="name" placeholder="Name" value={ editableUser.name } className="editUserInfo" onChange={ EditChange }/>
-                       </div>
-                       <div className="editInfo">
+                           <Input type="text" name="name" placeholder="Name" value={ editableUser.name } className="editUserInfo" onChange={ EditChange }/>
+                       </Col>
+                       <Col className="editInfo">
                              <span>Surname
                              </span>
-                           <input type="text" name="surname" placeholder="Surname" value={ editableUser.surname } className="editUserInfo" onChange={ EditChange }/>
-                       </div>
-                       <div className="editInfo">
+                           <Input type="text" name="lastName" placeholder="LastName" value={ editableUser.lastName } className="editUserInfo" onChange={ EditChange }/>
+                       </Col>
+                       <Col className="editInfo">
                             <span>
                                 Country
                             </span>
-                           <input type="text" name="country" placeholder="Country" value={ editableUser.country } className="editUserInfo" onChange={ EditChange }/>
-                       </div>
-                       <div className="editInfo">
+                           <Input type="text" name="country" placeholder="Country" value={ editableUser.country } className="editUserInfo" onChange={ EditChange }/>
+                       </Col>
+                       <Col className="editInfo">
                             <span>
                                 City
                             </span>
-                           <input type="text" name="city" placeholder="City" value={ editableUser.city } className="editUserInfo" onChange={ EditChange }/>
-                       </div>
-                       <div className="editInfo">
-                           <span>
-                              Email
-                           </span>
-                           <input type="text" name="email" placeholder="Email" value={ editableUser.email } className="editUserInfo" onChange={ EditChange }/>
-                       </div>
-                       <div className="editInfo">
-                           <span>
-                              Phone
-                           </span>
-                           <input type="text" name="phone" placeholder="Phone" value={ editableUser.phone } className="editUserInfo" onChange={ EditChange }/>
-                       </div>
-                       <div className="editInfo">
+                           <Input type="text" name="city" placeholder="City" value={ editableUser.city } className="editUserInfo" onChange={ EditChange }/>
+                       </Col>
+                       <Col className="editInfo">
                            <span>
                               Address
                            </span>
-                           <input type="text" name="address" placeholder="Address" value={ editableUser.address } className="editUserInfo" onChange={ EditChange }/>
-                       </div>
-                       <div className="editInfo">
+                           <Input type="text" name="address" placeholder="Address" value={ editableUser.address } className="editUserInfo" onChange={ EditChange }/>
+                       </Col>
+                       <Col className="editInfo">
                            <span>
                               Address2
                            </span>
-                           <input type="text" name="address" placeholder="Address" value={ editableUser.address2 }  onChange={ EditChange }/>
-                       </div>
-                       <div className="editInfo">
+                           <Input type="text" name="address" placeholder="Address" value={ editableUser.address2 }  onChange={ EditChange }/>
+                       </Col>
+                       <Col className="editInfo">
                             <span>
                                 Legal
                             </span>
@@ -69,11 +58,11 @@ class Edit extends Component {
                                <option value="Company">Company</option>
                                <option value="Individual">Individual</option>
                            </select>
-                       </div>
-                       <div className="editInfo">
+                       </Col>
+                       <Col className="editInfo">
                            <span>Package</span>
                            <label htmlFor="">
-                               <input
+                               <Input
                                    type="radio"
                                    name="packageKind"
                                    value="Standart"
@@ -83,7 +72,7 @@ class Edit extends Component {
                                Standart Package
                            </label>
                            <label htmlFor="">
-                               <input
+                               <Input
                                    type="radio"
                                    name="packageKind"
                                    value="Premium"
@@ -92,13 +81,13 @@ class Edit extends Component {
                                />
                                Premium Package
                            </label>
-                       </div>
-                   </div>
-                    <div className="usersButton">
+                       </Col>
+                   </Row>
+                    <Row className="usersButton">
                         <input className="goLink" type="submit" value="Save" onClick={ MakeChange }/>
                         <NavLink className="goLink" to="/">Users</NavLink>
-                    </div>
-           </form>
+                    </Row>
+           </Form>
        }
         return(
             <div className="editUserContent"><div className="title">Edit User Profile</div>{content}</div>
