@@ -79,7 +79,7 @@ export default (state = initialState,action) => {
             });
             return {
                 ...state,
-                editableUser:editUser
+                editableUser:editUser,
             }
         }
         case "EDIT_CHANGE" : {

@@ -9,20 +9,21 @@ class NewUser extends Component{
         return(
             <form action="">
                     <div className="userAddInfo">
-                        <input type="text" name="name" placeholder="Name" className="newUserInfo" required onChange={ HandleChange } />
-                        <input type="text" name="lastName" placeholder="LastName" className="newUserInfo" required onChange={ HandleChange }/>
-                        <input type="text" name="country" placeholder="Country" className="newUserInfo" required onChange={ HandleChange }/>
-                        <input type="text" name="city" placeholder="City" className="newUserInfo" required onChange={ HandleChange }/>
-                        <input type="text" name="email" placeholder="Email" className="newUserInfo" required onChange={ HandleChange }/>
-                        <input type="text" name="phone" placeholder="Phone" className="newUserInfo" required onChange={ HandleChange }/>
-                        <input type="text" name="address" placeholder="Address" className="newUserInfo" required onChange={ HandleChange }/>
+                        <input type="text" name="name" placeholder="Name" className="newUserInfo"  onChange={ HandleChange } />
+                        <input type="text" name="lastName" placeholder="LastName" className="newUserInfo"  onChange={ HandleChange }/>
+                        <input type="text" name="country" placeholder="Country" className="newUserInfo"  onChange={ HandleChange }/>
+                        <input type="text" name="city" placeholder="City" className="newUserInfo"  onChange={ HandleChange }/>
+                        <input type="text" name="email" placeholder="Email" className="newUserInfo"  onChange={ HandleChange }/>
+                        <input type="text" name="phone" placeholder="Phone" className="newUserInfo"  onChange={ HandleChange }/>
+                        <input type="text" name="address" placeholder="Address" className="newUserInfo"  onChange={ HandleChange }/>
+                        <input type="text" name="address2" placeholder="Address2"  onChange={ HandleChange }/>
                         <div>
                             <span>Package</span>
                             <label htmlFor="">
                                 <input
                                     type="radio"
                                     name="packageKind"
-                                    value="Standard Package"
+                                    value="Standard"
                                     onChange = { HandleChange }
                                     checked
                                 />
@@ -32,7 +33,7 @@ class NewUser extends Component{
                                 <input
                                     type="radio"
                                     name="packageKind"
-                                    value="Premium Package"
+                                    value="Premium"
                                     onChange = { HandleChange }
                                 />
                                 Premium Package

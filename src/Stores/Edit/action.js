@@ -1,8 +1,8 @@
 export const EditChange = (event) => dispatch => {
     dispatch({
-        type:"EDIT_CHANGE",
-        name:event.target.name,
-        value:event.target.value
+        type: "EDIT_CHANGE",
+        name: event.target.name,
+        value: event.target.value
     })
 
 };
