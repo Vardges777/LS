@@ -1,0 +1,39 @@
+
+$extra_bold:"Work Sans extra_bold";
+$medium:"Work Sans Medium";
+$bold:"Work Sans Bold";
+$semi:"Work Sans Semi";
+
+
+
+@font-face {
+  font-family: 'Work Sans extra_bold';
+  src: url('../Fonts/WorkSans-ExtraBold.eot');
+  src: url('../Fonts/WorkSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/WorkSans-ExtraBold.woff2') format('woff2'),
+  url('../Fonts/WorkSans-ExtraBold.woff') format('woff'),
+  url('../Fonts/WorkSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans Medium';
+  src: url('../Fonts/WorkSans-Medium.eot');
+  src: url('../Fonts/WorkSans-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/WorkSans-Medium.woff2') format('woff2'),
+  url('../Fonts/WorkSans-Medium.woff') format('woff'),
+  url('../Fonts/WorkSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans Semi';
+  src: url('../Fonts/WorkSans-SemiBold.eot');
+  src: url('../Fonts/WorkSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../Fonts/WorkSans-SemiBold.woff2') format('woff2'),
+  url('../Fonts/WorkSans-SemiBold.woff') format('woff'),
+  url('../Fonts/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+

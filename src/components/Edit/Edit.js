@@ -7,7 +7,7 @@ class Edit extends Component {
     render(){
         const { MakeChange,EditChange } = this.props;
         const { UsersData:{ editableUser } } = this.props;
-        let content = <div>Select the User for Edition <NavLink className="goLink" to="/">Users</NavLink></div>;
+        let content = <div className="registrationError"><span>Select the User for Edition</span> <NavLink className="goLink" to="/">Users</NavLink></div>;
        if (editableUser !== undefined){
            content = <form  action="">
                    <div className="userEditInfoSection">
@@ -76,7 +76,7 @@ class Edit extends Component {
                                <input
                                    type="radio"
                                    name="packageKind"
-                                   value="Standard"
+                                   value="Standart"
                                    onChange = { EditChange }
                                    checked = {editableUser.packageKind === "Standart"}
                                />
@@ -101,7 +101,7 @@ class Edit extends Component {
            </form>
        }
         return(
-            <div className="editUserContent">{content}</div>
+            <div className="editUserContent"><div className="title">Edit User Profile</div>{content}</div>
         )
     }
 }

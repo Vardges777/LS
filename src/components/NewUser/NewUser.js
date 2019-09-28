@@ -8,37 +8,38 @@ class NewUser extends Component{
         const { HandleChange,SubmitForm } = this.props;
         return(
             <form action="">
+                <div className="title">Registration</div>
                     <div className="userAddInfo">
                         <div className="addUserInfo">
-                            <label htmlFor="">Name</label>
+                            <span>Name</span>
                             <input type="text" name="name" placeholder="Name" className="newUserInfo"  onChange={ HandleChange } />
                         </div>
                         <div className="addUserInfo">
-                            <label htmlFor="">LastName</label>
+                            <span>LastName</span>
                             <input type="text" name="lastName" placeholder="LastName" className="newUserInfo"  onChange={ HandleChange }/>
                         </div>
                         <div className="addUserInfo">
-                            <label htmlFor="">Country</label>
+                            <span>Country</span>
                             <input type="text" name="country" placeholder="Country" className="newUserInfo"  onChange={ HandleChange }/>
                         </div>
                         <div className="addUserInfo">
-                            <label htmlFor="">City</label>
+                            <span>City</span>
                             <input type="text" name="city" placeholder="City" className="newUserInfo"  onChange={ HandleChange }/>
                         </div>
                         <div className="addUserInfo">
-                            <label htmlFor="">Name</label>
+                            <span>Name</span>
                             <input type="text" name="email" placeholder="Email" className="newUserInfo"  onChange={ HandleChange }/>
                         </div>
                         <div className="addUserInfo">
-                            <label htmlFor="">Phone</label>
+                            <span>Phone</span>
                             <input type="number" name="phone" placeholder="Phone" className="newUserInfo"  onChange={ HandleChange }/>
                         </div>
                         <div className="addUserInfo">
-                            <label htmlFor="">Address</label>
+                            <span>Address</span>
                             <input type="text" name="address" placeholder="Address" className="newUserInfo"  onChange={ HandleChange }/>
                         </div>
                        <div className="addUserInfo">
-                           <label htmlFor="">Address2</label>
+                           <span>Address2</span>
                            <input type="text" name="address2" placeholder="Address2"  onChange={ HandleChange }/>
                        </div>
                         <div className="addUserInfo">

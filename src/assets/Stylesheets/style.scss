@@ -1,4 +1,5 @@
 @import "~antd/dist/antd.css";
+@import "fonts";
 *{
   margin: 0;
   padding: 0;
@@ -93,4 +94,43 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  span{
+    font-family: $extra_bold;
+  }
+}
+.editInfo {
+  span{
+    font-family: $extra_bold;
+  }
+}
+.goLink,.delete{
+  font-family: $medium;
+}
+input{
+  font-family: $semi;
+}
+.userInfo{
+  font-family: $semi;
+  span{
+    font-family: $medium;
+  }
+}
+.title{
+  font-family: $extra_bold;
+  font-size: 30px;
+  text-align: center;
+}
+.registrationError{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  span{
+    font-family: $medium;
+    margin: 15px 0;
+  }
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

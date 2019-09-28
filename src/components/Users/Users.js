@@ -7,9 +7,10 @@ class UserPage extends Component {
     render() {
         const { UsersData:{ users } } = this.props;
         const { ShowUser,Delete } = this.props;
-        console.log(users);
+
         return (
             <div className="users">
+                <div className="title">Users List</div>
                 {users.map((user,index) => (
                     <div key={index} className="individualUser">
                         <div className="userInfoList">
