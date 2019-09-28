@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import { connect } from 'react-redux';
 import { NavLink } from "react-router-dom";
 import { EditChange,MakeChange } from "../../Stores/Edit/action";
-import { input } from "antd"
 
 class Edit extends Component {
     render(){
@@ -11,7 +10,7 @@ class Edit extends Component {
         let content = <div>Select the User for Edition <NavLink className="goLink" to="/">Users</NavLink></div>;
        if (editableUser !== undefined){
            content = <form  action="">
-                   <div className="userEditInfo">
+                   <div className="userEditInfoSection">
                        <div className="editInfo">
                              <span>
                                  Name
@@ -102,7 +101,7 @@ class Edit extends Component {
            </form>
        }
         return(
-            <div>{content}</div>
+            <div className="editUserContent">{content}</div>
         )
     }
 }
