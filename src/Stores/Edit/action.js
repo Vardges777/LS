@@ -12,7 +12,7 @@ export const MakeChange = (event) => dispatch => {
     let editUserInfo = document.querySelectorAll(".editUserInfo");
     let valid = true;
     editUserInfo.forEach((item)=>{
-        if (item.value.length == 0){
+        if (item.value.length === 0){
             item.style.border="3px solid red";
             valid = false
         }

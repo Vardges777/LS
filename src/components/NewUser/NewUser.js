@@ -48,7 +48,7 @@ class NewUser extends Component{
                                 <input
                                     type="radio"
                                     name="packageKind"
-                                    value="Standard"
+                                    value="Standart"
                                     onChange = { HandleChange }
                                     checked
                                 />
@@ -68,10 +68,9 @@ class NewUser extends Component{
                         <span>
                             Legal
                         </span>
-                        <select name="legal" value="Company"   onChange={ HandleChange }>
-
-                            <option value="Company">Company</option>
-                            <option value="Individual ">Individual</option>
+                        <select name="legal" onClick = { HandleChange }>
+                            <option value="Company" selected>Company</option>
+                            <option value="Individual">Individual</option>
                         </select>
                         </div>
                     </div>

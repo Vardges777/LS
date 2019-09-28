@@ -10,7 +10,7 @@ export const SubmitForm = (event) => dispatch => {
     let addUserinfo = document.querySelectorAll(".newUserInfo");
     let valid = true;
     addUserinfo.forEach((item)=>{
-        if (item.value.length == 0){
+        if (item.value.length === 0){
             item.style.border="3px solid red";
             valid = false
         }
