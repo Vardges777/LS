@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom"
 import { HandleChange,SubmitForm } from "../../Stores/NewUser/action";
 import { Form, Row, Col, Input, Radio, Select } from 'antd'
 const { Option } = Select;
+
 class NewUser extends Component{
     constructor(){
         super();
@@ -21,7 +22,7 @@ class NewUser extends Component{
         this.setState({
             legal:e
         })
-    }
+    };
 
     render(){
         const { HandleChange,SubmitForm } = this.props;

@@ -93,7 +93,13 @@ export default (state = initialState,action) => {
         case 'MAKE_CHANGE' : {
             let userState = state.users;
             let editableUserId = state.editableUser.id;
+            state.editableUser = {
+                ...state.editableUser,
+                packageKind: action.packagekind,
+                legal:action.legal
+            };
             userState[editableUserId] = state.editableUser;
+
             return {
                 ...state,
                 users:userState

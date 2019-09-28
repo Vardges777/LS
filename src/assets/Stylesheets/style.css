@@ -83,7 +83,7 @@ form input {
 
 .usersButton {
   display: flex;
-  margin-top: 25px; }
+  margin: 25px 0; }
 
 .userEditInfoSection, .userAddInfo {
   display: flex;

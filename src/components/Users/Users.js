@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
-import { Form, Row, Col, Input, Button, Icon } from 'antd'
+import { Row, Col, } from 'antd'
 import { NavLink } from "react-router-dom";
 import { ShowUser,Delete } from "../../Stores/Users/action";
 class UserPage extends Component {

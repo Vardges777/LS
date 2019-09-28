@@ -1,15 +1,34 @@
 import React, {Component} from "react";
 import { connect } from 'react-redux';
-import { Form, Row, Col, Input, Button, Icon,InputNumber  } from 'antd';
+import {Form, Row, Col, Input, Radio, Select} from 'antd';
 import { NavLink } from "react-router-dom";
 import { EditChange,MakeChange } from "../../Stores/Edit/action";
+const { Option } = Select;
 
 class Edit extends Component {
+    constructor(){
+        super();
+        this.state = {
+            packageKind:"Standart",
+            legal:"Company"
+        }
+    }
+    onChange = e => {
+        this.setState({
+            [e.target.name]:e.target.value
+        });
+    };
+    changeLegal = e => {
+        this.setState({
+            legal:e
+        })
+    };
     render(){
+
         const { MakeChange,EditChange } = this.props;
         const { UsersData:{ editableUser } } = this.props;
         let content = <div className="registrationError"><span>Select the User for Edition</span> <NavLink className="goLink" to="/">Users</NavLink></div>;
-       if (editableUser !== undefined){
+        if (editableUser !== undefined){
            content = <Form  action="">
                    <Row className="userEditInfoSection">
                        <Col className="editInfo">
@@ -45,46 +64,33 @@ class Edit extends Component {
                            <span>
                               Address2
                            </span>
-                           <Input type="text" name="address" placeholder="Address" value={ editableUser.address2 }  onChange={ EditChange }/>
+                           <Input type="text" name="address2" placeholder="Address" value={ editableUser.address2 }  onChange={ EditChange }/>
                        </Col>
                        <Col className="editInfo">
-                            <span>
-                                Legal
-                            </span>
-                           <select
-                               name="legal"
-                               value={editableUser.legal}
-                               onChange={ EditChange }>
-                               <option value="Company">Company</option>
-                               <option value="Individual">Individual</option>
-                           </select>
+                           <Select defaultValue={ this.state.legal } onChange = { this.changeLegal }>
+                               <Option value="Company">Company</Option>
+                               <Option value="Individual">Individual</Option>
+                           </Select>
                        </Col>
                        <Col className="editInfo">
                            <span>Package</span>
-                           <label htmlFor="">
-                               <Input
-                                   type="radio"
-                                   name="packageKind"
-                                   value="Standart"
-                                   onChange = { EditChange }
-                                   checked = {editableUser.packageKind === "Standart"}
-                               />
-                               Standart Package
-                           </label>
-                           <label htmlFor="">
-                               <Input
-                                   type="radio"
-                                   name="packageKind"
-                                   value="Premium"
-                                   onChange = { EditChange }
-                                   checked = {editableUser.packageKind === "Premium"}
-                               />
-                               Premium Package
-                           </label>
+                           <Radio.Group name="packageKind" onChange = { this.onChange } value={this.state.packageKind}>
+                               <Radio  type="radio"
+                                       name="packageKind"
+                                       value="Standart"
+                                       className="userPackage"
+                               >  Standart Package</Radio>
+                               <Radio  type="radio"
+                                       name="packageKind"
+                                       value="Premium"
+                                       className="userPackage">
+                                   Premium Package
+                               </Radio>
+                           </Radio.Group >
                        </Col>
                    </Row>
                     <Row className="usersButton">
-                        <input className="goLink" type="submit" value="Save" onClick={ MakeChange }/>
+                        <input className="goLink" type="submit" value="Save" packagekind = { this.state.packageKind } legal={ this.state.legal } onClick={ MakeChange }/>
                         <NavLink className="goLink" to="/">Users</NavLink>
                     </Row>
            </Form>
@@ -97,7 +103,7 @@ class Edit extends Component {
 
 export default connect (
     state => ({
-        UsersData:state.Users
+        UsersData:state.Users,
     }),
     {
         EditChange,

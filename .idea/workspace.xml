@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="202d54f9-6f54-4470-9434-1db33b15d4ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stores/NewUser/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stores/NewUser/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stores/Edit/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stores/Edit/action.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stores/Users/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stores/Users/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/Stylesheets/.sass-cache/5aa5c8f614c6b46158095dbfa66f0e6c5a5a2472/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Stylesheets/.sass-cache/5aa5c8f614c6b46158095dbfa66f0e6c5a5a2472/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/Stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Stylesheets/style.css" afterDir="false" />
@@ -20,14 +19,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.9">
+    <splitter split-orientation="horizontal" split-proportion="0.8600605">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Edit/Edit.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1037">
-                  <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+                <state relative-caret-position="63">
+                  <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -42,8 +41,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Stores/Users/reducer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="629">
-                  <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+                <state relative-caret-position="119">
+                  <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -78,6 +77,7 @@
       <find>.userInfoList</find>
       <find>.editInfo</find>
       <find>addUserInfo</find>
+      <find>usersButton</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -128,13 +128,13 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/assets/Stylesheets/fonts.scss" />
-        <option value="$PROJECT_DIR$/src/Stores/Edit/action.js" />
-        <option value="$PROJECT_DIR$/src/assets/Stylesheets/style.scss" />
-        <option value="$PROJECT_DIR$/src/components/Edit/Edit.js" />
-        <option value="$PROJECT_DIR$/src/components/Users/Users.js" />
         <option value="$PROJECT_DIR$/src/Stores/NewUser/action.js" />
-        <option value="$PROJECT_DIR$/src/Stores/Users/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/NewUser/NewUser.js" />
+        <option value="$PROJECT_DIR$/src/Stores/Edit/action.js" />
+        <option value="$PROJECT_DIR$/src/Stores/Users/reducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Users/Users.js" />
+        <option value="$PROJECT_DIR$/src/components/Edit/Edit.js" />
+        <option value="$PROJECT_DIR$/src/assets/Stylesheets/style.scss" />
       </list>
     </option>
   </component>
@@ -161,6 +161,19 @@
               <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
@@ -236,12 +249,12 @@
       <workItem from="1565852690933" duration="18914000" />
       <workItem from="1565941903899" duration="329000" />
       <workItem from="1569514893543" duration="1913000" />
-      <workItem from="1569569856439" duration="57025000" />
+      <workItem from="1569569856439" duration="60373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177986000" />
+    <option name="totallyTimeSpent" value="181334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
@@ -368,13 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stores/Edit/reducer.ks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stores/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -412,20 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stores/Edit/action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Stylesheets/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stores/Users/action.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -440,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stores/Users/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stores/NewUser/action.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -454,30 +439,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stores/Edit/reducer.ks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stores/Edit/action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Users/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewUser/NewUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="71" column="10" lean-forward="true" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Users/Users.js">
+    <entry file="file://$PROJECT_DIR$/src/assets/Stylesheets/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        <state relative-caret-position="211">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Edit/Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+        <state relative-caret-position="63">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stores/Users/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
         </state>
       </provider>
     </entry>

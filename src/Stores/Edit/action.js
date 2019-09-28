@@ -20,6 +20,8 @@ export const MakeChange = (event) => dispatch => {
     if (valid){
         return  dispatch({
             type:"MAKE_CHANGE",
+            packagekind:event.target.attributes[2].value,
+            legal:event.target.attributes[3].value
         })
     }
 
