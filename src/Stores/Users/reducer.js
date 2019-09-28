@@ -21,7 +21,7 @@ const initialState = {
             city:"Erevan",
             country:"Armenia",
             address:"Komunarner",
-            address2:"Saryan",
+            address2:"",
             legal:"Individual",
             packageKind:"Premium",
             id:1

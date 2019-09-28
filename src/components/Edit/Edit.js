@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import { connect } from 'react-redux';
 import { NavLink } from "react-router-dom";
 import { EditChange,MakeChange } from "../../Stores/Edit/action";
+import { input } from "antd"
 
 class Edit extends Component {
     render(){
@@ -12,46 +13,51 @@ class Edit extends Component {
            content = <form  action="">
                    <div className="userEditInfo">
                        <div className="editInfo">
-                   <span>
-                       Name
-                   </span>
+                             <span>
+                                 Name
+                             </span>
                            <input type="text" name="name" placeholder="Name" value={ editableUser.name } className="editUserInfo" onChange={ EditChange }/>
                        </div>
                        <div className="editInfo">
-                   <span>
-                       Surname
-                   </span>
+                             <span>Surname
+                             </span>
                            <input type="text" name="surname" placeholder="Surname" value={ editableUser.surname } className="editUserInfo" onChange={ EditChange }/>
                        </div>
                        <div className="editInfo">
-                  <span>
-                      Country
-                  </span>
+                            <span>
+                                Country
+                            </span>
                            <input type="text" name="country" placeholder="Country" value={ editableUser.country } className="editUserInfo" onChange={ EditChange }/>
                        </div>
                        <div className="editInfo">
-                  <span>
-                      City
-                  </span>
+                            <span>
+                                City
+                            </span>
                            <input type="text" name="city" placeholder="City" value={ editableUser.city } className="editUserInfo" onChange={ EditChange }/>
                        </div>
                        <div className="editInfo">
-                 <span>
-                     Email
-                 </span>
+                           <span>
+                              Email
+                           </span>
                            <input type="text" name="email" placeholder="Email" value={ editableUser.email } className="editUserInfo" onChange={ EditChange }/>
                        </div>
                        <div className="editInfo">
-                  <span>
-                      Phone
-                  </span>
+                           <span>
+                              Phone
+                           </span>
                            <input type="text" name="phone" placeholder="Phone" value={ editableUser.phone } className="editUserInfo" onChange={ EditChange }/>
                        </div>
                        <div className="editInfo">
-              <span>
-                  Address
-              </span>
+                           <span>
+                              Address
+                           </span>
                            <input type="text" name="address" placeholder="Address" value={ editableUser.address } className="editUserInfo" onChange={ EditChange }/>
+                       </div>
+                       <div className="editInfo">
+                           <span>
+                              Address2
+                           </span>
+                           <input type="text" name="address" placeholder="Address" value={ editableUser.address2 }  onChange={ EditChange }/>
                        </div>
                        <div className="editInfo">
                             <span>

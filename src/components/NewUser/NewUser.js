@@ -23,8 +23,8 @@ class NewUser extends Component{
                                     type="radio"
                                     name="packageKind"
                                     value="Standard Package"
-
-                                    onClick={ HandleChange }
+                                    onChange = { HandleChange }
+                                    checked
                                 />
                                 Standart Package
                             </label>
@@ -33,7 +33,7 @@ class NewUser extends Component{
                                     type="radio"
                                     name="packageKind"
                                     value="Premium Package"
-                                    onClick={ HandleChange }
+                                    onChange = { HandleChange }
                                 />
                                 Premium Package
                             </label>
@@ -42,7 +42,8 @@ class NewUser extends Component{
                         <span>
                             Legal
                         </span>
-                        <select name="legal" id=""  onChange={ HandleChange }>
+                        <select name="legal" value="Company"   onChange={ HandleChange }>
+
                             <option value="Company">Company</option>
                             <option value="Individual ">Individual</option>
                         </select>

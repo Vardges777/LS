@@ -18,6 +18,7 @@ class UserPage extends Component {
                             <div className="userInfo">Country: &nbsp;&nbsp;  <span>{ user.country }</span></div>
                             <div className="userInfo">City: &nbsp;&nbsp;  <span>{ user.city }</span></div>
                             <div className="userInfo">Address: &nbsp;&nbsp;  <span>{ user.address }</span></div>
+                            <div className="userInfo">Address2: &nbsp;&nbsp;  <span>{ user.address2 }</span></div>
                             <div className="userInfo">Email: &nbsp;&nbsp; <span>{ user.email }</span></div>
                             <div className="userInfo">Legal: &nbsp;&nbsp; <span>{ user.legal }</span></div>
                             <div className="userInfo">Package: &nbsp;&nbsp; <span>{ user.packageKind }</span></div>
