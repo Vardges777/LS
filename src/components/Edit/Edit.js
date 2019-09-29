@@ -10,13 +10,9 @@ class Edit extends Component {
         super(props);
         this.state = {
                 editableUser:{
-                    ...props.UsersData.editableUser,
                     packageKind:props.UsersData.editableUser.packageKind,
                     legal:props.UsersData.editableUser.legal,
                 }
-
-
-
         }
     }
     onChange = e => {
@@ -25,8 +21,6 @@ class Edit extends Component {
                 ...this.state.editableUser,
                 [e.target.name]: e.target.value
             }
-
-
         });
     };
     changeLegal = e => {
@@ -35,14 +29,12 @@ class Edit extends Component {
                 ...this.state.editableUser,
                 legal:e
             }
-
-
         })
     };
     render(){
-        console.log(this.state.editableUser)
         const { MakeChange,EditChange } = this.props;
         const { UsersData:{ editableUser } } = this.props;
+
         let content = <div className="registrationError"><span>Select the User for Edition</span> <NavLink className="goLink" to="/">Users</NavLink></div>;
         if (Object.entries(editableUser).length !== 0){
            content = <Form  action="">

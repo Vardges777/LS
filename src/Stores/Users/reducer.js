@@ -23,8 +23,8 @@ const initialState = {
             id:1
         },
         {
-            name:"Norayr",
-            lastName:"Melkumyan",
+            name:"Sevada",
+            lastName:"Grigoryan",
             city:"Erevan",
             country:"Armenia",
             address:"Prospekt",
@@ -111,6 +111,9 @@ export default (state = initialState,action) => {
         case "DELETE_USER" : {
             let newUsers = state.users;
             newUsers.splice(action.userId,1);
+            newUsers.map((item,index)=>{
+                item.id = index
+            });
             return {
                 ...state,
                 users:newUsers
