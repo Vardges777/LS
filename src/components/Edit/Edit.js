@@ -6,11 +6,11 @@ import { EditChange,MakeChange } from "../../Stores/Edit/action";
 const { Option } = Select;
 
 class Edit extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
-            packageKind:"Standart",
-            legal:"Company"
+            packageKind:props.UsersData.editableUser.packageKind,
+            legal:props.UsersData.editableUser.legal,
         }
     }
     onChange = e => {
@@ -109,4 +109,4 @@ export default connect (
         EditChange,
         MakeChange
     }
-    )(Edit)
+)(Edit)
