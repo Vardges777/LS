@@ -37,6 +37,9 @@ const initialState = {
     newUser: {
 
     },
+    editableUser:{
+
+    }
 };
 
 export default (state = initialState,action) => {

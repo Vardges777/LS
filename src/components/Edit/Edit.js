@@ -9,26 +9,42 @@ class Edit extends Component {
     constructor(props){
         super(props);
         this.state = {
-            packageKind:props.UsersData.editableUser.packageKind,
-            legal:props.UsersData.editableUser.legal,
+                editableUser:{
+                    ...props.UsersData.editableUser,
+                    packageKind:props.UsersData.editableUser.packageKind,
+                    legal:props.UsersData.editableUser.legal,
+                }
+
+
+
         }
     }
     onChange = e => {
         this.setState({
-            [e.target.name]:e.target.value
+            editableUser:{
+                ...this.state.editableUser,
+                [e.target.name]: e.target.value
+            }
+
+
         });
     };
     changeLegal = e => {
         this.setState({
-            legal:e
+            editableUser:{
+                ...this.state.editableUser,
+                legal:e
+            }
+
+
         })
     };
     render(){
-
+        console.log(this.state.editableUser)
         const { MakeChange,EditChange } = this.props;
         const { UsersData:{ editableUser } } = this.props;
         let content = <div className="registrationError"><span>Select the User for Edition</span> <NavLink className="goLink" to="/">Users</NavLink></div>;
-        if (editableUser !== undefined){
+        if (Object.entries(editableUser).length !== 0){
            content = <Form  action="">
                    <Row className="userEditInfoSection">
                        <Col className="editInfo">
@@ -67,14 +83,14 @@ class Edit extends Component {
                            <Input type="text" name="address2" placeholder="Address" value={ editableUser.address2 }  onChange={ EditChange }/>
                        </Col>
                        <Col className="editInfo">
-                           <Select defaultValue={ this.state.legal } onChange = { this.changeLegal }>
+                           <Select defaultValue={ this.state.editableUser.legal } onChange = { this.changeLegal }>
                                <Option value="Company">Company</Option>
                                <Option value="Individual">Individual</Option>
                            </Select>
                        </Col>
                        <Col className="editInfo">
                            <span>Package</span>
-                           <Radio.Group name="packageKind" onChange = { this.onChange } value={this.state.packageKind}>
+                           <Radio.Group name="packageKind" onChange = { this.onChange } value={this.state.editableUser.packageKind}>
                                <Radio  type="radio"
                                        name="packageKind"
                                        value="Standart"
@@ -90,7 +106,7 @@ class Edit extends Component {
                        </Col>
                    </Row>
                     <Row className="usersButton">
-                        <input className="goLink" type="submit" value="Save" packagekind = { this.state.packageKind } legal={ this.state.legal } onClick={ MakeChange }/>
+                        <input className="goLink" type="submit" value="Save" packagekind = { this.state.editableUser.packageKind } legal={ this.state.editableUser.legal } onClick={ MakeChange }/>
                         <NavLink className="goLink" to="/">Users</NavLink>
                     </Row>
            </Form>
